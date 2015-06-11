@@ -176,8 +176,16 @@ a.shadow:hover {
     line-height: 20px;
     margin: 8px 0;
   }
+}
 
+@media screen and (min-width: 1140px) {
   .me {
     top: 0;
+  }
+}
+
+@media screen and (min-width: 40.5em) and (max-width: 1140px) {
+  .me {
+    top: 140px;
   }
 }
