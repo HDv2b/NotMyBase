@@ -1,0 +1,183 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: none; } }
+
+q {
+  &:before, &:after {
+    content: '';
+    content: none; } }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* end reset */
+
+html {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  .title{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+  .subtitle{
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+a.shadow:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.status {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.status-text {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.status-for-hire {
+  .status-label {
+    color: #00b100;
+  }
+}
+
+.me {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-image: url('/media/CAD look at me.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  margin-top: 10px;
+  margin-left: -10px;
+  pointer-events: none;
+}
+
+.about-container {
+  z-index: 3;
+}
+
+.about {
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.contact-button {
+  color: #000;
+  border: 1px #000 solid;
+  background-color: #fff;
+  text-decoration: none;
+  padding: 4px;
+  margin: 12px auto 4px;
+  display: table;
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 40.5em) {
+  header {
+    position: fixed;
+    top:0;
+    padding: 14px;
+    .title{
+      font-size: 36px;
+      line-height: 48px;
+      font-weight: bold;
+    }
+    .subtitle{
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  .about-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about{
+    width: 400px;
+    padding: 20px;
+  }
+
+  .status {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+  }
+
+  .status-text {
+    font-size: 18px;
+    line-height: 20px;
+    margin: 8px 0;
+  }
+
+  .me {
+    top: 0;
+  }
+}
