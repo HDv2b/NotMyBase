@@ -98,6 +98,7 @@ a.shadow:hover {
 .status-for-hire {
   .status-label {
     color: #00b100;
+    color: #D22C2C;
   }
 }
 
@@ -135,13 +136,31 @@ a.shadow:hover {
   margin: 12px auto 4px;
   display: table;
   border-radius: 2px;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(255,255,255,0.5);
+  padding: 4px;
+  width: 100%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.small-print {
+  font-size: 12px;
 }
 
 @media screen and (min-width: 40.5em) {
   header {
     position: fixed;
     top:0;
-    padding: 14px;
+    padding: 14px 0;
     .title{
       font-size: 36px;
       line-height: 48px;
@@ -176,8 +195,16 @@ a.shadow:hover {
     line-height: 20px;
     margin: 8px 0;
   }
+}
 
+@media screen and (min-width: 1140px) {
   .me {
     top: 0;
+  }
+}
+
+@media screen and (min-width: 40.5em) and (max-width: 1140px) {
+  .me {
+    top: 140px;
   }
 }
