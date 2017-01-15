@@ -119,6 +119,7 @@ a.shadow:hover {
   margin-top: 10px;
   margin-left: -10px;
   pointer-events: none;
+  bottom: -380px;
 }
 
 .about-container {
@@ -152,6 +153,7 @@ a.shadow:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 460px;
+  max-width: 100%;
   .link {
     flex-basis: 200px;
     text-align: center;
@@ -226,7 +228,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 40.5em) and (max-width: 1140px) {
+@media screen and (min-width: 40.5em) and (max-width: 1400px) {
   .me {
     top: 140px;
   }
