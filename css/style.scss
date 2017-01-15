@@ -123,6 +123,9 @@ a.shadow:hover {
 
 .about-container {
   z-index: 3;
+  section {
+    margin: 2em 0;
+  }
 }
 
 .about {
@@ -135,13 +138,26 @@ a.shadow:hover {
 .contact-button {
   color: #000;
   border: 1px #000 solid;
+  border-radius: 2px;
   background-color: #fff;
   text-decoration: none;
   padding: 4px;
   margin: 12px auto 4px;
   display: table;
-  border-radius: 2px;
   text-align: center;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .link {
+    flex-basis: 200px;
+    text-align: center;
+    @extend .shadow;
+    @extend .contact-button;
+    display: inline-block;
+  }
 }
 
 footer {
@@ -182,6 +198,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
 
   .about{
