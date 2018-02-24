@@ -2,4 +2,5 @@
 .gitignore
 .idea/
 soon/
-css/*.css
+# css/*.css
+# css/*.css.map
