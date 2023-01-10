@@ -39,18 +39,19 @@ table {
 html {
   width: 100vw;
   height: 100vh;
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 body {
   position: absolute;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
   flex-flow: column;
   font-family: Futura,Trebuchet MS,Arial,sans-serif; }
 
 header {
+  background-color: #fff;
   width: 100%;
   text-align: center;
   padding: 10px; }
@@ -101,10 +102,8 @@ a.shadow:hover, .links a.link:hover {
   pointer-events: none;
   bottom: -380px; }
 
-.about-container {
-  z-index: 3; }
-  .about-container section {
-    margin: 2em auto; }
+.about-container section {
+  margin: 2em auto; }
 
 .about {
   margin: 10px;
@@ -138,7 +137,7 @@ footer {
   position: fixed;
   bottom: 0;
   z-index: 2;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #fff;
   padding: 4px;
   width: 100%; }
 
@@ -166,7 +165,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: 80px; }
 
   .about {
     width: 400px;
